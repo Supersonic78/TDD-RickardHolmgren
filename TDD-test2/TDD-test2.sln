@@ -15,6 +15,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validator", "Validator\Vali
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validator.test", "Validator.test\Validator.test.csproj", "{BE50006C-E539-45EA-A001-5629DA115FFE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ex2", "Ex2", "{E6BD3C24-407F-4071-BE95-FD2AD9360298}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelAgency", "TravelAgency\TravelAgency.csproj", "{86C7C667-48C3-41A0-AC69-AFEDB9C3A1DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelAgencyTests", "TravelAgencyTests\TravelAgencyTests.csproj", "{2C468DFC-25EC-4BC1-870F-1325DF9FD6F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +47,14 @@ Global
 		{BE50006C-E539-45EA-A001-5629DA115FFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE50006C-E539-45EA-A001-5629DA115FFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE50006C-E539-45EA-A001-5629DA115FFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86C7C667-48C3-41A0-AC69-AFEDB9C3A1DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86C7C667-48C3-41A0-AC69-AFEDB9C3A1DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86C7C667-48C3-41A0-AC69-AFEDB9C3A1DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86C7C667-48C3-41A0-AC69-AFEDB9C3A1DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C468DFC-25EC-4BC1-870F-1325DF9FD6F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C468DFC-25EC-4BC1-870F-1325DF9FD6F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C468DFC-25EC-4BC1-870F-1325DF9FD6F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C468DFC-25EC-4BC1-870F-1325DF9FD6F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,5 +62,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{6DEA01ED-4894-48D3-A9EA-00D6B9DC6675} = {5B94E97A-DAF5-4EDB-9A94-C7ADAC270728}
 		{BE50006C-E539-45EA-A001-5629DA115FFE} = {5B94E97A-DAF5-4EDB-9A94-C7ADAC270728}
+		{86C7C667-48C3-41A0-AC69-AFEDB9C3A1DC} = {E6BD3C24-407F-4071-BE95-FD2AD9360298}
+		{2C468DFC-25EC-4BC1-870F-1325DF9FD6F8} = {E6BD3C24-407F-4071-BE95-FD2AD9360298}
 	EndGlobalSection
 EndGlobal

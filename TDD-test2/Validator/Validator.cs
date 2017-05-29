@@ -11,9 +11,14 @@ namespace Validator
     {
         public bool ValidMail { get; set; }
         const string emailRegex = @"^([a-zA-Z]+)@([a-zA-Z]+).([a-zA-Z]+)$";
-        public void ValidateEmailAddress(string email)
+        public bool ValidateEmailAddress(string email)
         {
+            if (string.IsNullOrEmpty(email))
+            {
+                throw new Exception("Error");
+            }
             ValidMail = Regex.IsMatch(email, emailRegex);
+            return ValidMail;
         }
     }
 }
