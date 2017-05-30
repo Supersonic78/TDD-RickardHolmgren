@@ -47,7 +47,8 @@ namespace StringCalculatorTests
         [Test]
         public void AddNegativeNumbers_CastExeption()
         {
-     
+            TestDelegate add = () => Calculator.Add("-1");
+            Assert.Throws<Exception>(add);
         }
     }
 }

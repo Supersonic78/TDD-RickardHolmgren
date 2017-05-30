@@ -8,21 +8,41 @@ namespace StringCalculator
 {
     public class Calculator
     {
+        private static List<char> delimiters = new List<char> { ',', '\n' };
         public static int Add(string value)
         {
             if (value == "") return 0;
             var sum = 0;
-            var delimiters = new List<char> { ',', '\n' };
+
+            parseForValues(parseForDelimiter(value))
+                .ForEach(s => sum += s);
+            //value = parseForDelimiter(value);
+            //List<int> values = parseForValues(value);
+         
+            return sum;
+        }
+
+        private static List<int> parseForValues(string value)
+        {
+            var values = new List<int>();
+            Array.ForEach(value.Split(delimiters.ToArray()), s =>
+            {
+                var number = int.Parse(s);
+                if (number < 0) throw new Exception("Negatives are not allowed");
+                values.Add(number);
+            });
+            
+            return values;
+        }
+
+        private static string parseForDelimiter(string value)
+        {
             if (value.StartsWith("//"))
             {
                 delimiters.Add(value[2]);
                 value = value.Substring(4);
             }
-            var values = new List<int>();
-            Array.ForEach(value.Split(delimiters.ToArray()), s => values.Add (int.Parse(s)));
-
-            values.ForEach(s => sum += s);
-            return sum;
+            return value;
         }
     }
 }
