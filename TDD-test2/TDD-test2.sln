@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validator", "Validator\Vali
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validator.test", "Validator.test\Validator.test.csproj", "{BE50006C-E539-45EA-A001-5629DA115FFE}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ex2", "Ex2", "{E6BD3C24-407F-4071-BE95-FD2AD9360298}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ex2 + Ex4", "Ex2 + Ex4", "{E6BD3C24-407F-4071-BE95-FD2AD9360298}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelAgency", "TravelAgency\TravelAgency.csproj", "{86C7C667-48C3-41A0-AC69-AFEDB9C3A1DC}"
 EndProject
@@ -26,6 +26,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringCalculator", "StringCalculator\StringCalculator.csproj", "{B40D6387-10AD-4EED-8464-77745413F90E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringCalculatorTests", "StringCalculatorTests\StringCalculatorTests.csproj", "{2CA419B2-68F4-4044-839F-45FEA03D7761}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExEx7", "ExEx7", "{E11A5760-F330-4590-93E0-B1F5B1AE4D15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuncNDelegates", "FuncNDelegates\FuncNDelegates.csproj", "{6BAC5633-B05B-454A-B7EF-6F41ECBA39B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +73,10 @@ Global
 		{2CA419B2-68F4-4044-839F-45FEA03D7761}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CA419B2-68F4-4044-839F-45FEA03D7761}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CA419B2-68F4-4044-839F-45FEA03D7761}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BAC5633-B05B-454A-B7EF-6F41ECBA39B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BAC5633-B05B-454A-B7EF-6F41ECBA39B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BAC5633-B05B-454A-B7EF-6F41ECBA39B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BAC5633-B05B-454A-B7EF-6F41ECBA39B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -80,5 +88,6 @@ Global
 		{2C468DFC-25EC-4BC1-870F-1325DF9FD6F8} = {E6BD3C24-407F-4071-BE95-FD2AD9360298}
 		{B40D6387-10AD-4EED-8464-77745413F90E} = {6E2E8B15-EC43-4F6E-9F18-B868E446CB96}
 		{2CA419B2-68F4-4044-839F-45FEA03D7761} = {6E2E8B15-EC43-4F6E-9F18-B868E446CB96}
+		{6BAC5633-B05B-454A-B7EF-6F41ECBA39B8} = {E11A5760-F330-4590-93E0-B1F5B1AE4D15}
 	EndGlobalSection
 EndGlobal

@@ -8,8 +8,8 @@ namespace StringCalculator
 {
     public class Calculator
     {
-        private static List<char> delimiters = new List<char> { ',', '\n' };
-        public static int Add(string value)
+        private List<char> delimiters = new List<char> { ',', '\n' };
+        public int Add(string value)
         {
             if (value == "") return 0;
             var sum = 0;
@@ -22,7 +22,7 @@ namespace StringCalculator
             return sum;
         }
 
-        private static List<int> parseForValues(string value)
+        private List<int> parseForValues(string value)
         {
             var values = new List<int>();
             Array.ForEach(value.Split(delimiters.ToArray()), s =>
@@ -35,7 +35,7 @@ namespace StringCalculator
             return values;
         }
 
-        private static string parseForDelimiter(string value)
+        private string parseForDelimiter(string value)
         {
             if (value.StartsWith("//"))
             {
