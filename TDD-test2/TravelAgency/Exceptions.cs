@@ -28,6 +28,9 @@ namespace TravelAgency
         }
         public class BookingPersonOnNonexistentTourException : Exception
         {
+            public BookingPersonOnNonexistentTourException(string message) : base(message)
+            {
+            }
         }
     }
 }

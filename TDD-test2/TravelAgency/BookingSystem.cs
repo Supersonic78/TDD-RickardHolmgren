@@ -25,7 +25,7 @@ namespace TravelAgency
             }
             if (tour.NumberOfSeats < seats)
             {
-                throw new Exception("No seats available");
+                throw new Exceptions.BookingPersonOnNonexistentTourException("Seats full");
             }
             var booking = new Booking();
             booking.TourName = tourName;
