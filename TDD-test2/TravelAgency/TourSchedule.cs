@@ -9,12 +9,12 @@ namespace TravelAgency
 {
     public class TourSchedule
     {
-        List<Tour> tours { get; set; } = new List<Tour>();
+        public List<Tour> tours { get; set; } = new List<Tour>();
 
         public void CreateTour(string name, DateTime date, int seats)
         {
             var chosenDate = new DateTime(date.Year, date.Month, date.Day);
-            var toursWithSameDate = tours.Where(x => x.Date == chosenDate).ToList();
+            var toursWithSameDate = tours.Where(x => x.DateOfTour == chosenDate).ToList();
 
             if (toursWithSameDate.Count >= 2)
             {
@@ -28,7 +28,7 @@ namespace TravelAgency
         }
         public List<Tour> GetToursFor(DateTime dateTime)
         {
-            var chosenDate = tours.Where(x => x.Date == dateTime).ToList();
+            var chosenDate = tours.Where(x => x.DateOfTour == dateTime).ToList();
             return chosenDate;
         }
     }

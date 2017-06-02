@@ -12,5 +12,22 @@ namespace TravelAgency
         {
 
         }
+        public class SameNameSameDateException : Exception
+        {
+
+        }
+
+        public class NegativeSeatException : Exception
+        {
+
+        }
+
+        public class BookingPersonOnTourWhereNoSeatsLeftException : Exception
+        {
+
+        }
+        public class BookingPersonOnNonexistentTourException : Exception
+        {
+        }
     }
 }

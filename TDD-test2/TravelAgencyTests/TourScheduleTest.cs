@@ -26,8 +26,8 @@ namespace TravelAgencyTests
             List<Tour> tours = sut.GetToursFor(new DateTime(2013, 1, 1));
 
             Assert.AreEqual(1, tours.Count);
-            Assert.AreEqual("New years day safari", tours[0].Name);
-            Assert.AreEqual(20, tours[0].Seats);
+            Assert.AreEqual("New years day safari", tours[0].NameOfTour);
+            Assert.AreEqual(20, tours[0].NumberOfSeats);
         }
 
         [Test]

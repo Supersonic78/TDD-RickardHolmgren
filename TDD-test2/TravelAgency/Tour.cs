@@ -8,15 +8,20 @@ namespace TravelAgency
 {
     public class Tour
     {
-        public string Name { get; set; }
-        public DateTime Date { get; set; }
-        public int Seats { get; set; }
+        public string NameOfTour { get; set; }
+        public DateTime DateOfTour { get; set; }
+        public int NumberOfSeats { get; set; }
 
-        public Tour(string name, DateTime date, int seats)
+        public Tour()
         {
-            Name = name;
-            Date = date;
-            Seats = seats;
+
+        }
+
+        public Tour(string tourname, DateTime tourdate, int numberofseats)
+        {
+            this.NameOfTour = tourname;
+            this.DateOfTour = tourdate;
+            this.NumberOfSeats = numberofseats;
         }
     }
 }
