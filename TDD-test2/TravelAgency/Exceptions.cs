@@ -24,6 +24,10 @@ namespace TravelAgency
 
         public class BookingPersonOnTourWhereNoSeatsLeftException : Exception
         {
+            public BookingPersonOnTourWhereNoSeatsLeftException(string message) : base(message)
+            {
+           
+            }
 
         }
         public class BookingPersonOnNonexistentTourException : Exception

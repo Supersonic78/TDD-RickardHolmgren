@@ -15,7 +15,7 @@ namespace Validator
         {
             if (string.IsNullOrEmpty(email))
             {
-                throw new Exception("Error");
+                throw new Exceptions.NullOrEmptyExeption();
             }
             ValidMail = Regex.IsMatch(email, emailRegex);
             return ValidMail;

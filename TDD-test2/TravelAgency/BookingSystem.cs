@@ -18,14 +18,15 @@ namespace TravelAgency
         public void CreateBooking(string tourName, DateTime dateOfTour, int seats, Passenger stubPassenger)
         {
             var tour = tourSchedule.Tours.FirstOrDefault(x => x.NameOfTour == tourName);
+           
 
             if (tour == null)
             {
-                throw new Exception("No tours exist");
+                throw new Exceptions.BookingPersonOnNonexistentTourException("No existing tour");
             }
             if (tour.NumberOfSeats < seats)
             {
-                throw new Exceptions.BookingPersonOnNonexistentTourException("Seats full");
+                throw new Exceptions.BookingPersonOnTourWhereNoSeatsLeftException("Seats full");
             }
             var booking = new Booking();
             booking.TourName = tourName;
